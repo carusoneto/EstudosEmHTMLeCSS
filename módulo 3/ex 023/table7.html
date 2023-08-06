@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 7</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        col.amarelo {
+            background-color: yellow;
+        }
+
+        col.vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>          
+    <table>
+        <colgroup>
+        <col class="amarelo">
+        <col class="vermelho">
+        <col class="vermelho">
+        <col class="amarelo">
+        </colgroup>
+        <caption>
+            cadastro
+        </caption>
+        <tr>
+            <th>nomes</th>
+            <th>idade</th>
+            <th>sexo</th>
+            <th>profissão</th>
+        </tr>
+        <tr>
+            <td>ana maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>25</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>gustavo</td>
+            <td>m</td>
+            <td>42</td>
+            <td>professor</td>
+        </tr>
+
+        <tr>
+            <td>caetano</td>
+            <td>m</td>
+            <td>26</td>
+            <td>desenvolvedor</td>
+        </tr>
+    </table>
+</body>
+</html>

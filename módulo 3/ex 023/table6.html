@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td { 
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col:nth-child(2n) {
+            background-color: aqua;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <caption>tabela top</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" >area</th>
+                <th rowspan="2" >disciplina</th>
+                <th colspan="2">notas</th>
+                <th rowspan="2">média</th>
+            </tr>
+            <tr>
+                <th>nota1</th>
+                <th>nota2</th>
+            </tr>
+            <tr>
+                <td>gsdfg</td>
+                <td>fgsdgsfdg</td>
+                <td>fsdfgsdf</td>
+                <td>sgsdsg</td>
+                <td>fsgsdg</td>
+                
+            </tr>
+           
+        </thead>
+    </table>
+</body>
+</html>

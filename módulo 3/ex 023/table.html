@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            border: 5px solid rgb(128, 126, 126);
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        /* o nth-child() sobrepõe, pelo menos nesse caso a configuração de colgroup */
+        
+        tr:nth-child(2n) {
+        background-color: aqua;
+       }
+        
+        colgroup {
+            background-color: aqua;
+        }
+
+        col#col-a {
+            background-color: rgb(7, 121, 121);
+        }
+
+        col#col-b {
+            background-color: blueviolet;
+        }
+        
+        col#col-c {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col id="col-a">
+            <col id="col-b">
+            <col id="col-c">
+        </colgroup>
+        <tr >
+            <td >a1</td>
+            <td >a2</td>
+            <td >a3</td>
+        </tr>
+        <tr>
+            <td>b1</td>
+            <td>b2</td>
+            <td>b3</td>
+        </tr>
+        <tr >
+            <td>c1</td>
+            <td>c2</td>
+            <td>c3</td>
+        </tr>
+        <tr>
+            <td>d1</td>
+            <td>d2</td>
+            <td>d3</td>
+        </tr>
+    </table>
+</body>
+</html>
